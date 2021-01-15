@@ -15,9 +15,12 @@ class ModelCommand extends Command
 
     public function handle()
     {
+        ray()->newScreen();
+
+        User::truncate();
+
         $role = Role::create(['name' => 'admin']);
 
-        /** @var \App\Models\User $user */
         $user = User::create([
             'name' => 'John',
             'password' => bcrypt('password'),
@@ -26,11 +29,29 @@ class ModelCommand extends Command
         ]);
 
         $user = $user->fresh();
-
         $user->load('role');
 
-        var_dump($user->relationsToArray());
+        User::create([
+            'name' => 'Paul',
+            'password' => bcrypt('password'),
+            'email' => now()->timestamp . '2@example.com',
+            'role_id' => $role->id,
+        ]);
 
+        ray('single user');
         ray()->model($user);
+
+        ray('Passing 2 models to model');
+        ray()->model(User::find(1), User::find(2));
+
+        ray('Passing a collection to model');
+
+        ray()->model(User::all());
+
+        ray('Passing 2 models to models');
+        ray()->models(User::all());
+
+        ray('it can handle null');
+        ray()->model(null);
     }
 }
