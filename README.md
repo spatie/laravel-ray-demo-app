@@ -1,9 +1,5 @@
 # Demo app to test Ray
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/laravel-ray.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-ray)
-![Tests](https://github.com/spatie/laravel-ray/workflows/Tests/badge.svg)
-[![Total Downloads](https://img.shields.io/packagist/dt/spatie/laravel-ray.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-ray)
-
 This Laravel project is being used by our team to test features of [the Ray app](https://myray.app) in Laravel.
 
 You may use this demo app, but we don't give any support on it.
