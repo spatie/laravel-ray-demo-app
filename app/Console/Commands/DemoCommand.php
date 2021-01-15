@@ -10,14 +10,10 @@ class DemoCommand extends Command
 
     public function handle()
     {
-        $ray = ray('is this loop ok');
+        ray('have a');
 
-        sleep(2);
+        ray('good weekend');
 
-        $ray->green();
-
-        sleep(2);
-
-        $ray->remove();
+        ray('everybody!');
     }
 }
