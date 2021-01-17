@@ -8,3 +8,9 @@ Route::get('/', function () {
 });
 
 Route::get('test', TestController::class);
+
+Route::get('pause', function() {
+    ray()->pause();
+
+    return 'all ok';
+});
