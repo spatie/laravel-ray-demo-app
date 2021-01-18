@@ -25,7 +25,7 @@ class EventCommand extends Command
             'email' => now()->timestamp . '@example.com',
         ]);
 
-        event(new TestEventWithParameter('hey'));
+       // event(new TestEventWithParameter('hey'));
 
     }
 }
