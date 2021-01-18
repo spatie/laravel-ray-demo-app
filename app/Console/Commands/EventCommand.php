@@ -18,7 +18,7 @@ class EventCommand extends Command
 
         ray()->showEvents();
 
-        // will fire event
+        // will fire event, user has $dispatchesEvents
         User::create([
             'name' => 'Paul',
             'password' => bcrypt('password'),
