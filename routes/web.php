@@ -14,3 +14,9 @@ Route::get('pause', function() {
 
     return 'all ok';
 });
+
+Route::get('request', function() {
+    ray(request(), app());
+
+    return 'all ok';
+});
