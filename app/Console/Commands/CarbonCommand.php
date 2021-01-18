@@ -15,6 +15,10 @@ class CarbonCommand extends Command
 
     public function handle()
     {
+        ray()->newScreen();
+
         ray()->carbon(now());
+
+        ray()->carbon(null);
     }
 }
