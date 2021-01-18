@@ -13,8 +13,8 @@ class MixedRayCommand extends Command
     public function handle()
     {
         ray(
-            'string',
             new Carbon(),
+            'string',
             ['a' => 1],
             User::make([
                 'email' => 'freek@spatie.be'
