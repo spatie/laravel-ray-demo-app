@@ -17,15 +17,20 @@ class EventCommand extends Command
         ray()->newScreen('Test events');
 
         ray()->showEvents();
+        event(new TestEventWithParameter('hey'));
+        event('test');
+
+        return;
 
         // will fire event, user has $dispatchesEvents
+        /*
         User::create([
             'name' => 'Paul',
             'password' => bcrypt('password'),
             'email' => now()->timestamp . '@example.com',
         ]);
+        */
 
-       // event(new TestEventWithParameter('hey'));
 
     }
 }
