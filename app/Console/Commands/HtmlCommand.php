@@ -15,6 +15,8 @@ class HtmlCommand extends Command
 
     public function handle()
     {
-        ray('<hey', ['a' => 1]);
+        ray('<hey', ['a' => 1], '<b>Hey</b>');
+
+        ray()->html('<b>Hey</b>');
     }
 }
