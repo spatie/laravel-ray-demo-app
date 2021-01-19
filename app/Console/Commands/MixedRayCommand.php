@@ -20,5 +20,16 @@ class MixedRayCommand extends Command
                 'email' => 'freek@spatie.be'
             ])
         );
+
+        ray()->newScreen();
+        ray(new Carbon());
+        ray('string');
+        ray(['a' => 1]);
+        ray( User::make([
+            'email' => 'freek@spatie.be'
+        ]));
+
+
+
     }
 }
