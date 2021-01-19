@@ -21,7 +21,7 @@ $ray = ray(
     ])
 );
 
-$ray->remove();
+//$ray->remove();
 
         ray()->newScreen();
         ray(new Carbon());
