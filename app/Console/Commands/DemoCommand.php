@@ -2,6 +2,8 @@
 
 namespace App\Console\Commands;
 
+use App\Models\Role;
+use App\Models\User;
 use Illuminate\Console\Command;
 
 class DemoCommand extends Command
@@ -10,10 +12,31 @@ class DemoCommand extends Command
 
     public function handle()
     {
-        ray('have a');
+        User::truncate();
+        Role::truncate();
 
-        ray('good weekend');
+        $role = Role::create(['name' => 'admin']);
 
-        ray('everybody!');
+        $user = User::create([
+            'name' => 'John',
+            'password' => bcrypt('password'),
+            'email' => now()->timestamp . '@example.com',
+            'role_id' => $role->id,
+        ]);
+
+        $user = $user->fresh();
+        $user->load('role');
+
+        ray()->raw($user);
+        return;
+        User::create([
+            'name' => 'Paul',
+            'password' => bcrypt('password'),
+            'email' => now()->timestamp . '2@example.com',
+            'role_id' => $role->id,
+        ]);
+
+        ray()->model($user);
+        ray(now());
     }
 }

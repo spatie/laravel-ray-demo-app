@@ -18,6 +18,7 @@ class ModelCommand extends Command
         ray()->newScreen();
 
         User::truncate();
+        Role::truncate();
 
         $role = Role::create(['name' => 'admin']);
 

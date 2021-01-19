@@ -15,7 +15,12 @@ class TestAllCommand extends Command
 
     public function handle()
     {
-        ray('collapsed by default')->hide();
+        ray()->newScreen();
+
+        ray('this is green')->green();
+        ray('this is orange')->orange();
+        ray('this is red')->red();
+        ray('this is blue')->blue();
 
         ray(new TestMailable());
         ray('group item 1', 'group item 2', 'group item 3');
