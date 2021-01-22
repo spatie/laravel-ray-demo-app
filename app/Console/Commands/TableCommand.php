@@ -12,6 +12,14 @@ class TableCommand extends Command
     {
         ray()->newScreen();
 
+        ray()->table(['John', 'Paul', 'George', 'Ringo'], 'Beatles');
+
+        ray()->table([
+            'First' => 'First value',
+            'Second' => 'Second value',
+            'Third' => 'Third value',
+        ]);
+
         ray()->table([
             'First' => 'First value',
             'Second' => 'Second value',
