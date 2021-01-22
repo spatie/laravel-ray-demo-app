@@ -20,6 +20,6 @@ class JobEventTestCommand extends Command
 
         ray()->showJobs();
 
-        dispatch(new TestJob('param'));
+        dispatch(new TestJob('my-test-job'));
     }
 }
