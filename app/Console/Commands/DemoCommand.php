@@ -12,31 +12,13 @@ class DemoCommand extends Command
 
     public function handle()
     {
-        User::truncate();
-        Role::truncate();
+        $stringNewLine  = 'hey\nbug';
+        $stringHtml = 'hey</br>bug';
 
-        $role = Role::create(['name' => 'admin']);
+        ray()->newScreen();
 
-        $user = User::create([
-            'name' => 'John',
-            'password' => bcrypt('password'),
-            'email' => now()->timestamp . '@example.com',
-            'role_id' => $role->id,
-        ]);
+        ray(app());
+        ray(app());
 
-        $user = $user->fresh();
-        $user->load('role');
-
-        ray()->raw($user);
-        return;
-        User::create([
-            'name' => 'Paul',
-            'password' => bcrypt('password'),
-            'email' => now()->timestamp . '2@example.com',
-            'role_id' => $role->id,
-        ]);
-
-        ray()->model($user);
-        ray(now());
     }
 }
