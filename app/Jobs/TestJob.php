@@ -33,6 +33,6 @@ class TestJob implements ShouldQueue
      */
     public function handle()
     {
-        throw new \Exception('exception in job');
+        //throw new \Exception('exception in job');
     }
 }
