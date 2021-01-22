@@ -14,6 +14,6 @@ class PhpInfoCommand extends Command
 
         ray()->phpinfo();
 
-        ray()->phpinfo('default_mimetype');
+        ray()->phpinfo('xdebug.enabled', 'default_mimetype');
     }
 }
