@@ -2419,12 +2419,72 @@
             "time": "2020-11-24T11:46:24+00:00"
         },
         {
+            "name": "spatie/laravel-package-tools",
+            "version": "0.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-package-tools.git",
+                "reference": "ee52453ed794cb0fd764231de60acb02e5207747"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/ee52453ed794cb0fd764231de60acb02e5207747",
+                "reference": "ee52453ed794cb0fd764231de60acb02e5207747",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^8.0",
+                "php": "^7.4|^8.0",
+                "spatie/backtrace": "^1.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.0",
+                "phpunit/phpunit": "^9.3",
+                "spatie/test-time": "^1.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\LaravelPackageTools\\": "src",
+                    "Spatie\\LaravelPackageTools\\Database\\Factories\\": "database/factories"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Tools for creating Laravel packages",
+            "homepage": "https://github.com/spatie/laravel-package-tools",
+            "keywords": [
+                "laravel-package-tools",
+                "spatie"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/laravel-package-tools/issues",
+                "source": "https://github.com/spatie/laravel-package-tools/tree/0.0.3"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-01-24T13:29:54+00:00"
+        },
+        {
             "name": "spatie/laravel-ray",
             "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "../laravel-ray",
-                "reference": "976e1501a5ffc2bd266c39cdc545c0c77c581f3d"
+                "reference": "4056657a375b71158bcdf3aa08759e7984544f2b"
             },
             "require": {
                 "illuminate/contracts": "^7.0|^8.0",
@@ -2433,6 +2493,7 @@
                 "illuminate/support": "^7.0|^8.13",
                 "php": "^7.4|^8.0",
                 "spatie/backtrace": "^1.0",
+                "spatie/laravel-package-tools": "^0.0.3",
                 "spatie/ray": "^1.13",
                 "symfony/stopwatch": "4.2|^5.1",
                 "zbateson/mail-mime-parser": "^1.3.1"
@@ -2563,7 +2624,7 @@
             "dist": {
                 "type": "path",
                 "url": "../ray",
-                "reference": "1df552d740f71f9866fa5b531ac7077726922f4e"
+                "reference": "d6b54013ac5fe9a2891337aae66d624b371cef99"
             },
             "require": {
                 "ext-curl": "*",
@@ -5727,16 +5788,16 @@
         },
         {
             "name": "filp/whoops",
-            "version": "2.9.1",
+            "version": "2.9.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "307fb34a5ab697461ec4c9db865b20ff2fd40771"
+                "reference": "df7933820090489623ce0be5e85c7e693638e536"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/307fb34a5ab697461ec4c9db865b20ff2fd40771",
-                "reference": "307fb34a5ab697461ec4c9db865b20ff2fd40771",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/df7933820090489623ce0be5e85c7e693638e536",
+                "reference": "df7933820090489623ce0be5e85c7e693638e536",
                 "shasum": ""
             },
             "require": {
@@ -5786,9 +5847,15 @@
             ],
             "support": {
                 "issues": "https://github.com/filp/whoops/issues",
-                "source": "https://github.com/filp/whoops/tree/2.9.1"
+                "source": "https://github.com/filp/whoops/tree/2.9.2"
             },
-            "time": "2020-11-01T12:00:00+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/denis-sokolov",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-01-24T12:00:00+00:00"
         },
         {
             "name": "hamcrest/hamcrest-php",
