@@ -10,15 +10,22 @@ class ShowAppCommand extends Command
 
     public function handle()
     {
-        ray()->newScreen();
+        ray()->newScreen('Hiding and showing Ray');
 
-        ray()->showApp();
+        $ray = ray();
 
-        sleep(2);
+        foreach(range(3,1) as $i) {
+            $ray->send("hiding app in {$i}...");
+            sleep(1);
+        }
+
+        $ray->send('bye bye 👋');
+        sleep(1);
 
         ray()->hideApp();
 
         sleep(2);
+        ray('And here we are back! 🎉');
 
         ray()->showApp();
     }
