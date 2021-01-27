@@ -12,13 +12,6 @@ class DemoCommand extends Command
 
     public function handle()
     {
-        $stringNewLine  = 'hey\nbug';
-        $stringHtml = 'hey</br>bug';
-
-        ray()->newScreen();
-
-        ray(app());
-        ray(app());
-
+        ray('\r\n');
     }
 }
