@@ -12,6 +12,8 @@ class DemoCommand extends Command
 
     public function handle()
     {
-        ray('\r\n');
+       ray('');
+
+       ray(null);
     }
 }
