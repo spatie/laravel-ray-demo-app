@@ -12,6 +12,8 @@ class ExceptionCommand extends Command
 
     public function handle()
     {
-        throw new Exception('This is my exception');
+        ray()->newScreen('Test exception');
+
+        throw new Exception('This is an exception');
     }
 }
