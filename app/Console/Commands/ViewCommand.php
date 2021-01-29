@@ -12,8 +12,10 @@ class ViewCommand extends Command
 
     public function handle()
     {
+        ray()->clearScreen();
+
         ray()->showViews();
 
-        view('welcome', ['test' => 'hey', 'command' => $this])->render();
+        view('welcome', ['name' => 'John Doe'])->render();
     }
 }
