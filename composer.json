@@ -29,8 +29,8 @@
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.12",
         "laravel/tinker": "^2.5",
-        "spatie/laravel-ray": "dev-master",
-        "spatie/ray": "dev-master as 1.19.0",
+        "spatie/laravel-ray": "dev-add-exception-payload",
+        "spatie/ray": "dev-add-exception-payload as 1.19.0",
         "zbateson/mail-mime-parser": "^1.3"
     },
     "require-dev": {

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0783eadccfa30720e4d2c4073a727906",
+    "content-hash": "9796f732f45f047c5d4d2a98b071d6e9",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2421,14 +2421,13 @@
         },
         {
             "name": "spatie/laravel-ray",
-            "version": "dev-master",
+            "version": "dev-add-exception-payload",
             "dist": {
                 "type": "path",
                 "url": "../laravel-ray",
-                "reference": "9a04314c27f417f09e6a74f8f04978e804ac405c"
+                "reference": "afaaae57d34b4632944621636d475415cb18c06d"
             },
             "require": {
-                "ext-json": "*",
                 "illuminate/contracts": "^7.20|^8.0",
                 "illuminate/database": "^7.20|^8.13",
                 "illuminate/queue": "^7.20|^8.13",
@@ -2440,6 +2439,7 @@
                 "zbateson/mail-mime-parser": "^1.3.1"
             },
             "require-dev": {
+                "ext-json": "*",
                 "facade/ignition": "^2.5",
                 "laravel/framework": "^7.20|^8.19",
                 "orchestra/testbench-core": "^5.0|^6.0",
@@ -2561,18 +2561,18 @@
         },
         {
             "name": "spatie/ray",
-            "version": "dev-master",
+            "version": "dev-add-exception-payload",
             "dist": {
                 "type": "path",
                 "url": "../ray",
-                "reference": "7f09e274aca0dac12835d5705ef6fd97d538cfb9"
+                "reference": "791533c971536eb6568da4c5170e8a6574eb5d0e"
             },
             "require": {
                 "ext-curl": "*",
                 "ext-json": "*",
                 "php": "^7.3|^8.0",
                 "ramsey/uuid": "^3.0|^4.1",
-                "spatie/backtrace": "^1.0",
+                "spatie/backtrace": "^1.1",
                 "spatie/macroable": "^1.0",
                 "symfony/stopwatch": "^5.1",
                 "symfony/var-dumper": "^4.2|^5.1"
@@ -7859,9 +7859,9 @@
     "aliases": [
         {
             "package": "spatie/ray",
-            "version": "9999999-dev",
-            "alias": "1.14.0",
-            "alias_normalized": "1.14.0.0"
+            "version": "dev-add-exception-payload",
+            "alias": "1.19.0",
+            "alias_normalized": "1.19.0.0"
         }
     ],
     "minimum-stability": "dev",
