@@ -15,9 +15,7 @@ class SpecialValuesCommand extends Command
         ray('false', false);
         ray('true', true);
 
-
         ray(null);
-
 
         ray(0);
     }
