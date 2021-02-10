@@ -14,7 +14,6 @@ class TestMailable extends Mailable
     public function build()
     {
         return $this
-            ->to('john@example.com')
             ->cc('jane@example.com')
             ->bcc('tarzan@example.com')
             ->subject('This is a test mailable')
