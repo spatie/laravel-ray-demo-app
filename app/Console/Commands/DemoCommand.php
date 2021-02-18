@@ -12,6 +12,7 @@ class DemoCommand extends Command
 
     public function handle()
     {
-       dump('hey');
+        ray(true);
+        //ray('hi chris', ['a', 'b', ['d' => 'e']]);
     }
 }
