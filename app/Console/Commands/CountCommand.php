@@ -10,7 +10,7 @@ class CountCommand extends Command
 
     public function handle()
     {
-        ray()->newScreen();
+        ray()->newScreen('count');
 
         foreach (range(1, 4) as $i) {
             sleep(1);
@@ -22,7 +22,7 @@ class CountCommand extends Command
                 ray()->count();
             }
         }
-
+return;
         ray()->newScreen();
 
         foreach (range(1, 4) as $i) {
