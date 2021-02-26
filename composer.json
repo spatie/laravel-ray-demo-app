@@ -80,7 +80,7 @@
             "cd ../laravel-ray;git pull",
             "rm -rf vendor",
             "composer install",
-            "git pull"
+            "git pull origin master"
         ]
     }
 }
