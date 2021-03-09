@@ -15,6 +15,6 @@ class CallerCommand extends Command
 
     public function handle()
     {
-        ray()->caller();
+        ray()->trace();
     }
 }

@@ -12,7 +12,13 @@ class DemoCommand extends Command
 
     public function handle()
     {
-        ray(true);
-        //ray('hi chris', ['a', 'b', ['d' => 'e']]);
+        ray()->newScreen();
+
+        ray()->showQueries()->blue();
+
+        $user = User::first();
+
+        ray('other thing');
+
     }
 }
