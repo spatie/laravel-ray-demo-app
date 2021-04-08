@@ -12,13 +12,6 @@ class DemoCommand extends Command
 
     public function handle()
     {
-        ray()->newScreen();
-
-        ray()->showQueries()->blue();
-
-        $user = User::first();
-
-        ray('other thing');
 
     }
 }
