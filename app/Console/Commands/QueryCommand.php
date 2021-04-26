@@ -14,7 +14,7 @@ class QueryCommand extends Command
     {
         ray()->newScreen();
 
-        ray()->showQueries();
+        ray()->showQueries()->blue();
 
         //User::where('name', '??? test')->get();
 

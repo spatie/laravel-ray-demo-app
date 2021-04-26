@@ -10,6 +10,8 @@ class JsonCommand extends Command
 
     public function handle()
     {
+        ray()->newScreen('Json test');
+
         ray()->toJson(['a' => 1, 'b' => ['c' => 3]]);
 
         $jsonString = json_encode(['a' => 1, 'b' => ['c' => 3]]);
