@@ -14,7 +14,7 @@ class RateLimiterCommand extends Command
         ray()->rateLimiter()->max(1);
 
         ray('This should be visible');
-        ray('This shouldn\'t be visible');
+        ray('This should not be visible');
 
         ray()->rateLimiter()->clear();
 
@@ -25,11 +25,11 @@ class RateLimiterCommand extends Command
 
         ray((new CarbonImmutable())->toDateTimeString('microseconds'));
 
-        ray('I shouldn\'t be visible');
+        ray('I should not be visible');
 
         sleep(1);
 
-        ray('I shouldn\'t be visible');
+        ray('I should not be visible');
 
         sleep(1);
 
