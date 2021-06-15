@@ -2383,7 +2383,7 @@
             "dist": {
                 "type": "path",
                 "url": "../laravel-ray",
-                "reference": "8aef34329f5bc88835be80993cab08bac8c6a10a"
+                "reference": "9f17f0295fd62e01fd8f81984d50480f16d1ff8e"
             },
             "require": {
                 "ext-json": "*",
@@ -2524,7 +2524,7 @@
             "dist": {
                 "type": "path",
                 "url": "../ray",
-                "reference": "168c4b47a54586da1ea2c4695523c429ee527f73"
+                "reference": "3c260097e4b25fd77e00b6dc53cbbaf68f264ad1"
             },
             "require": {
                 "ext-curl": "*",
