@@ -14,17 +14,28 @@ class QueryCommand extends Command
     {
         ray()->newScreen();
 
+        ray()->countQueries(function() {
+            $user = User::first();
+            $user = User::first();
+            $user = User::first();
+        });
+
+        return;
+
         ray()->showQueries()->blue();
 
         //User::where('name', '??? test')->get();
 
         $user = User::first();
 
-        $user->update(['name' => ' ? name ?' . now()->timestamp]);
+        //$user->update(['name' => ' ? name ?' . now()->timestamp]);
 
         ray()->stopShowingQueries();
 
         User::where('name', 'test')->get();
+
+
+
 
     }
 }
