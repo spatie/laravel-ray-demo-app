@@ -20,11 +20,9 @@ class QueryCommand extends Command
             $user = User::first();
         });
 
-        return;
-
         ray()->showQueries()->blue();
 
-        //User::where('name', '??? test')->get();
+        User::where('name', '??? test')->get();
 
         $user = User::first();
 
