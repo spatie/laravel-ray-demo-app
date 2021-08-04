@@ -16,6 +16,6 @@ class LabelCommand extends Command
 
     public function handle()
     {
-        ray(['a' => 1])->label('my array');
+        ray(['John', 'Paul', 'George', 'Ringo'])->label('Beatles');
     }
 }
