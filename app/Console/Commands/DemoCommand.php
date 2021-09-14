@@ -14,13 +14,5 @@ class DemoCommand extends Command
     public function handle()
     {
 
-        throw new Exception('hey');
-        $ray = ray('hallo iedereen');
-
-        sleep(3);
-
-        sleep(3);
-
-        $ray->remove();
     }
 }
