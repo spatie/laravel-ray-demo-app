@@ -13,6 +13,6 @@ class DemoCommand extends Command
 
     public function handle()
     {
-        view('test', ['myVariable' => 'hi everyone'])->render();
+
     }
 }
