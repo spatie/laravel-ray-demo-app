@@ -41,7 +41,8 @@ class ModelCommand extends Command
 
         ray('single user');
         ray()->model($user);
-return;
+
+        /*
         ray('Passing 2 models to model');
         ray()->model(User::find(1), User::find(2));
 
@@ -54,5 +55,6 @@ return;
 
         ray('it can handle null');
         ray()->model(null);
+        */
     }
 }

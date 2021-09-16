@@ -5,7 +5,7 @@ namespace App\Console\Commands;
 use App\Mail\TestMailable;
 use Illuminate\Console\Command;
 
-class Mail extends Command
+class MailCommand extends Command
 {
     protected $signature = 'mail';
 
