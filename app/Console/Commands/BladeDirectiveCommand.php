@@ -2,14 +2,16 @@
 
 namespace App\Console\Commands;
 
-use App\Models\Role;
+use App\Events\TestEvent;
+use App\Mail\TestMailable;
 use App\Models\User;
+use App\Services\ClassWithRayCall;
 use Illuminate\Console\Command;
-use PHPUnit\Framework\Exception;
+use Spatie\Ray\Ray;
 
-class DemoCommand extends Command
+class BladeDirectiveCommand extends Command
 {
-    protected $signature = 'demo';
+    protected $signature = 'blade';
 
     public function handle()
     {
