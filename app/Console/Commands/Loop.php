@@ -8,9 +8,6 @@ class Loop extends Command
 {
     protected $signature = 'loop';
 
-    protected $description = '';
-
-
     public function handle()
     {
         foreach(range(1,50) as $i) {
