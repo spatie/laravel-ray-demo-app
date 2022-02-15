@@ -20,8 +20,6 @@ class EventCommand extends Command
         event(new TestEventWithParameter('hey'));
         event('test');
 
-        return;
-
         // will fire event, user has $dispatchesEvents
         /*
         User::create([
@@ -30,7 +28,5 @@ class EventCommand extends Command
             'email' => now()->timestamp . '@example.com',
         ]);
         */
-
-
     }
 }

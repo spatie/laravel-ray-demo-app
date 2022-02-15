@@ -6,7 +6,6 @@ use Exception;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
 
-
 class QueryExceptionCommand extends Command
 {
     protected $signature = 'query-exception';

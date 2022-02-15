@@ -9,13 +9,13 @@ class AddRolesTable extends Migration
 {
     public function up()
     {
-        Schema::create('roles', function(Blueprint $table) {
+        Schema::create('roles', function (Blueprint $table) {
             $table->id();
             $table->string('name')->default('admin');
             $table->timestamps();
         });
 
-        Schema::table('users', function(Blueprint $table) {
+        Schema::table('users', function (Blueprint $table) {
             $table->unsignedBigInteger('role_id')->nullable();
         });
     }

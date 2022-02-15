@@ -17,6 +17,5 @@ class GlobalFunctionCommand extends Command
         ray('array_map');
         ray('is_callable');
 
-        return;
     }
 }

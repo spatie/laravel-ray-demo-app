@@ -24,7 +24,7 @@ class TestAllCommand extends Command
 
         ray(new TestMailable());
         ray('group item 1', 'group item 2', 'group item 3');
-        ray(['a' => 1, 'b' => ['c' => 3, 'd' => '4', 'e' => '5', 'f' => range(1,27)]]);
+        ray(['a' => 1, 'b' => ['c' => 3, 'd' => '4', 'e' => '5', 'f' => range(1, 27)]]);
 
         ray('this is green')->green();
         ray('this is orange')->orange();
@@ -60,7 +60,7 @@ class TestAllCommand extends Command
 
         $ray->send('second part');
 
-        collect(['a','b', 'c'])
+        collect(['a', 'b', 'c'])
             ->ray();
     }
 }

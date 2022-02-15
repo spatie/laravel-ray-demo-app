@@ -10,7 +10,7 @@ class MyCommand extends Command
 
     public function handle()
     {
-       $this->anotherFunctionOfMyOwn();
+        $this->anotherFunctionOfMyOwn();
     }
 
     public function anotherFunctionOfMyOwn()

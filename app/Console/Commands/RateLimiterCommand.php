@@ -20,7 +20,6 @@ class RateLimiterCommand extends Command
 
         ray('This should be visible again!');
 
-
         ray()->rateLimiter()->perSecond(1);
 
         ray((new CarbonImmutable())->toDateTimeString('microseconds'));
