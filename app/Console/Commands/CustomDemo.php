@@ -2,7 +2,6 @@
 
 namespace App\Console\Commands;
 
-
 use Illuminate\Console\Command;
 use Spatie\Ray\Ray;
 
@@ -14,7 +13,7 @@ class CustomDemo extends Command
     {
         ray()->newScreen();
 
-        Ray::macro('myCustomFunction', function() {
+        Ray::macro('myCustomFunction', function () {
             $this->sendCustom('my custom content', 'hey');
         });
 

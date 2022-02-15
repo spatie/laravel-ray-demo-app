@@ -12,26 +12,23 @@ class MixedRayCommand extends Command
 
     public function handle()
     {
-$ray = ray(
+        $ray = ray(
     new Carbon(),
     'string',
     ['a' => 1],
     User::make([
-        'email' => 'freek@spatie.be'
+        'email' => 'freek@spatie.be',
     ])
 );
 
-//$ray->remove();
+        //$ray->remove();
 
         ray()->newScreen();
         ray(new Carbon());
         ray('string');
         ray(['a' => 1]);
-        ray( User::make([
-            'email' => 'freek@spatie.be'
+        ray(User::make([
+            'email' => 'freek@spatie.be',
         ]));
-
-
-
     }
 }

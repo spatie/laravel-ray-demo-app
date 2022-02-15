@@ -13,6 +13,5 @@ class DemoCommand extends Command
 
     public function handle()
     {
-
     }
 }

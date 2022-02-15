@@ -22,7 +22,8 @@ class CountCommand extends Command
                 ray()->count();
             }
         }
-return;
+
+        return;
         ray()->newScreen();
 
         foreach (range(1, 4) as $i) {

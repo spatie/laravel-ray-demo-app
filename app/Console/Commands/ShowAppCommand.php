@@ -14,7 +14,7 @@ class ShowAppCommand extends Command
 
         $ray = ray();
 
-        foreach(range(3,1) as $i) {
+        foreach (range(3, 1) as $i) {
             $ray->send("hiding app in {$i}...");
             sleep(1);
         }

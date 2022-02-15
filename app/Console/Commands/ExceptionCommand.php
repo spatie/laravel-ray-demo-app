@@ -5,7 +5,6 @@ namespace App\Console\Commands;
 use Exception;
 use Illuminate\Console\Command;
 
-
 class ExceptionCommand extends Command
 {
     protected $signature = 'exception';

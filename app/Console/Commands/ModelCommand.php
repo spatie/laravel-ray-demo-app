@@ -25,7 +25,7 @@ class ModelCommand extends Command
         $user = User::create([
             'name' => 'John',
             'password' => bcrypt('password'),
-            'email' => now()->timestamp . '@example.com',
+            'email' => now()->timestamp.'@example.com',
             'role_id' => $role->id,
         ]);
 
@@ -35,7 +35,7 @@ class ModelCommand extends Command
         User::create([
             'name' => 'Paul',
             'password' => bcrypt('password'),
-            'email' => now()->timestamp . '2@example.com',
+            'email' => now()->timestamp.'2@example.com',
             'role_id' => $role->id,
         ]);
 

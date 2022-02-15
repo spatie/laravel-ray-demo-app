@@ -33,9 +33,5 @@ class QueryCommand extends Command
             $user = User::first();
         });
         */
-
-
-
-
     }
 }

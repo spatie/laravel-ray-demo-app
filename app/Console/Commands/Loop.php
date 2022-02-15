@@ -10,7 +10,7 @@ class Loop extends Command
 
     public function handle()
     {
-        foreach(range(1,50) as $i) {
+        foreach (range(1, 50) as $i) {
             ray("We're at iteration {$i}");
             sleep(1);
         }

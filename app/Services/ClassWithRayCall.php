@@ -6,6 +6,6 @@ class ClassWithRayCall
 {
     public function __construct()
     {
-        ray('called from ' . __CLASS__);
+        ray('called from '.__CLASS__);
     }
 }
