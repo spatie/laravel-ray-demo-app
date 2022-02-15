@@ -6,7 +6,6 @@
         "framework",
         "laravel"
     ],
-
     "repositories": [
         {
             "type": "path",
