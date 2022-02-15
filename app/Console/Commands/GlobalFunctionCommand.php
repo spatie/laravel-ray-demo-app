@@ -16,6 +16,5 @@ class GlobalFunctionCommand extends Command
         ray('app');
         ray('array_map');
         ray('is_callable');
-
     }
 }
