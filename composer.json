@@ -9,26 +9,18 @@
     "repositories": [
         {
             "type": "path",
-            "url": "../ray"
-        },
-        {
-            "type": "path",
             "url": "../laravel-ray"
-        },
-        {
-            "type": "path",
-            "url": "../ignition"
         }
     ],
     "license": "MIT",
     "require": {
-        "php": "^7.4|^8.0",
+        "php": "^8.1",
         "fruitcake/laravel-cors": "^2.0.5",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^9.0",
         "laravel/tinker": "^2.7",
         "spatie/laravel-ray": "dev-main",
-        "spatie/ray": "dev-main as 1.29.0",
+        "spatie/laravel-tail": "^4.4",
         "zbateson/mail-mime-parser": "^2.2"
     },
     "require-dev": {
