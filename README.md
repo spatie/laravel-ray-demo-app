@@ -1,3 +1,6 @@
+
+[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/support-ukraine.svg?t=1" />](https://supportukrainenow.org)
+
 # Demo app to test Ray
 
 This Laravel project is being used by our team to test features of [the Ray app](https://myray.app) in Laravel.
