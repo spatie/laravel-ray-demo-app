@@ -10,11 +10,13 @@ class MyCommand extends Command
 
     public function handle()
     {
-        $this->anotherFunctionOfMyOwn();
-    }
+        ray()->clearScreen();
 
-    public function anotherFunctionOfMyOwn()
-    {
-        ray()->trace();
+        ray('a string');
+
+        ray(['an array']);
+
+        ray(app());
+
     }
 }

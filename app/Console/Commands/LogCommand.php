@@ -13,9 +13,9 @@ class LogCommand extends Command
 
     public function handle()
     {
-        ray()->newScreen('Log test');
+        ray()->newScreen();
 
-        info('Things to log will be displayed in Ray as well');
+        ray('hi there. The time is now ' . now()->format('H:i:s'));
 
         Log::info('logging via facade');
 
