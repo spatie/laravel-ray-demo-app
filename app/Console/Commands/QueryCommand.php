@@ -18,6 +18,8 @@ class QueryCommand extends Command
 
         User::where('name', '??? test')->get();
 
+        return;
+
         $user = User::first();
 
         //$user->update(['name' => ' ? name ?' . now()->timestamp]);

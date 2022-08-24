@@ -15,8 +15,6 @@ class LogCommand extends Command
     {
         ray()->newScreen();
 
-        ray('hi there. The time is now ' . now()->format('H:i:s'));
-
         Log::info('logging via facade');
 
         // mails sent with log driver will go to Ray as well

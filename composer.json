@@ -20,6 +20,7 @@
         "laravel/framework": "^9.0",
         "laravel/tinker": "^2.7",
         "spatie/laravel-ray": "dev-main",
+        "spatie/laravel-sql-commenter": "^1.1",
         "spatie/laravel-tail": "^4.4",
         "zbateson/mail-mime-parser": "^2.2"
     },

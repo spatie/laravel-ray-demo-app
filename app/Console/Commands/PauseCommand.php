@@ -11,6 +11,7 @@ class PauseCommand extends Command
     public function handle()
     {
         ray()->newScreen('Pause demo');
+
         ray('Pausing...')->pause();
 
         ray('after the pause');
