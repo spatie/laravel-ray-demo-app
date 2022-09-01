@@ -17,11 +17,7 @@ class QueryCommand extends Command
 
         ray()->showQueries();
 
-        DB::statement("SELECT * FROM users /*controller='UsersController',action='index'*/");
-return;
         User::where('name', '??? test')->get();
-
-        return;
 
         $user = User::first();
 
@@ -29,15 +25,7 @@ return;
 
         ray()->stopShowingQueries();
 
-
         User::where('name', 'test')->get();
 
-        /*
-        ray()->countQueries(function() {
-            $user = User::first();
-            $user = User::first();
-            $user = User::first();
-        });
-        */
     }
 }
