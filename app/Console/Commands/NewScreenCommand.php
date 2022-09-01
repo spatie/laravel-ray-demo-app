@@ -17,6 +17,8 @@ class NewScreenCommand extends Command
     {
         ray()->newScreen('This is a new screen');
 
+        ray()->confetti();
+
         ray('content of screen');
     }
 }
