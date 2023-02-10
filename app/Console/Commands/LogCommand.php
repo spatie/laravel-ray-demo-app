@@ -15,10 +15,14 @@ class LogCommand extends Command
     {
         ray()->newScreen();
 
-        Log::info('logging via facade');
+        //Log::info('logging via facade');
+
+        ray(['a' => 1]);
+
+        // Log::info('hey');
 
         // mails sent with log driver will go to Ray as well
 
-        Mail::to('freek@spatie.be')->send(new TestMailable());
+        //Mail::to('freek@spatie.be')->send(new TestMailable());
     }
 }

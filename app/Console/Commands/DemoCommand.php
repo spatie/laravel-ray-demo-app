@@ -10,6 +10,6 @@ class DemoCommand extends Command
 
     public function handle()
     {
-
+        info('hey michael', ['now with'=> 'context']);
     }
 }
