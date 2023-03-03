@@ -12,7 +12,8 @@ class InvadeCommand extends Command
     {
         $privateClass = new PrivateClass();
 
-        ray()->invade($privateClass)->privateMethod();
+        ray()->invade($privateClass)->privateProperty->red();
+        ray()->invade($privateClass)->privateMethod()->green();
     }
 }
 
