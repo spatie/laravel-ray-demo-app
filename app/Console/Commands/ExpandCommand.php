@@ -23,6 +23,7 @@ class ExpandCommand extends Command
         ];
 
         ray($array)->expand('parentKey.childKey');
+        ray($array)->expand(2);
 
         ray(app())->expand('resolved');
     }
