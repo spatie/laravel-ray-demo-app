@@ -1,3 +1,0 @@
-@ray($myVariable)
-
-Testing Ray
