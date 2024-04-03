@@ -23,6 +23,7 @@ class LogCommand extends Command
 
         // mails sent with log driver will go to Ray as well
 
-        //Mail::to('freek@spatie.be')->send(new TestMailable());
+
+        Mail::to('freek@spatie.be')->send(new TestMailable());
     }
 }
