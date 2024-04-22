@@ -3,8 +3,8 @@
 
 Your order has been shipped!
 
-@component('mail::button', ['url' => 'https://spatie.be?hey=yo&option=value'])
-    View Order
+@component('mail::button', ['url' => \Illuminate\Support\Facades\URL::signedRoute('test')])
+    Show me the secrets!
 @endcomponent
 
 Thanks,<br>
