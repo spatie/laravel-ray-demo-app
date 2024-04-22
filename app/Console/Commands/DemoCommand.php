@@ -10,6 +10,6 @@ class DemoCommand extends Command
 
     public function handle()
     {
-        info('Ray can now...', ['also log'=> 'context of log items 🥳']);
+        ray('here')->hide();
     }
 }
