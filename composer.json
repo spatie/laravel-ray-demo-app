@@ -12,9 +12,10 @@
     ],
     "require": {
         "php": "^8.2",
-        "spatie/laravel-ray": "dev-main",
         "laravel/framework": "^11.0",
-        "laravel/tinker": "^2.9"
+        "laravel/tinker": "^2.9",
+        "spatie/laravel-ray": "dev-main",
+        "spatie/laravel-tail": "^4.5"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",

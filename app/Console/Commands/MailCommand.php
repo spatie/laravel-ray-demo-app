@@ -14,7 +14,7 @@ class MailCommand extends Command
     {
         ray()->newScreen('Test mailable');
 
-        ray()->mailable(new TestMailable());
+        //ray()->mailable(new TestMailable());
 
         Mail::to('freek@spatie.be')->send(new TestMailable());
     }
