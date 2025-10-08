@@ -11,12 +11,10 @@ use Spatie\Ray\Ray;
 
 class ContextCommand extends Command
 {
-    protected $signature = 'confetti';
+    protected $signature = 'context';
 
     public function handle()
     {
-
-
         ray()->context();
     }
 }
