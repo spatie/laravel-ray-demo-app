@@ -2,8 +2,6 @@
 
 namespace App\Console\Commands;
 
-use App\Mail\TestMailable;
-use App\Models\Role;
 use App\Models\User;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Log;
@@ -18,15 +16,12 @@ class ModelCommand extends Command
         ray()->newScreen();
 
         User::truncate();
-        Role::truncate();
 
-        $role = Role::create(['name' => 'admin']);
 
         $user = User::create([
             'name' => 'John',
             'password' => bcrypt('password'),
             'email' => now()->timestamp.'@example.com',
-            'role_id' => $role->id,
         ]);
 
         $user = $user->fresh();
@@ -36,7 +31,6 @@ class ModelCommand extends Command
             'name' => 'Paul',
             'password' => bcrypt('password'),
             'email' => now()->timestamp.'2@example.com',
-            'role_id' => $role->id,
         ]);
 
         ray('single user');

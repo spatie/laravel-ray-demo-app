@@ -3,10 +3,10 @@
 namespace App\Console\Commands;
 
 use App\Events\TestEvent;
-use App\Events\TestEventWithParameter;
 use App\Models\User;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Event;
+use Spatie\LaravelRay\Tests\TestClasses\TestEventWithParameter;
 
 class EventCommand extends Command
 {
